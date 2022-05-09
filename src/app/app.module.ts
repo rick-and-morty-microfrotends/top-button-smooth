@@ -1,7 +1,6 @@
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { TopButtonComponent } from './top-button/top-button.component';
 
 @NgModule({
@@ -19,5 +18,5 @@ export class AppModule {
     customElements.define('top-button-smooth', customElement);
   }
 
-  ngDoBootstrap() { }
+  ngDoBootstrap(): void { }
 }
