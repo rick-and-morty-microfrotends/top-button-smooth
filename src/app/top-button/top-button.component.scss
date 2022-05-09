@@ -1,0 +1,33 @@
+.top-button-smooth {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.8s linear;
+
+  &:hover {
+    background-color: lightgray;
+  }
+  &:hover > &__arrow-up {
+    border-color: black;
+  }
+
+  &__arrow-up {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: all 0.8s linear;
+  }
+}
